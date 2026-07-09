@@ -1,7 +1,7 @@
-"""โปรแกรมรับชื่อ"""
+"""โปรแกรมป้อนชื่อนามสกุล"""
 
-Name = str(input())
-Surname = str(input())
+Name = input()
+Surname = input()
 
 print("Hello", Name, Surname)
-
+print(Name[0:2:1] + Surname[0:2:1])
