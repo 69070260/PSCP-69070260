@@ -1,6 +1,6 @@
 """รับค่า string มาแล้วให้มันแสดงในรูปกรอบสี่เหลี่ยม"""
-name = str(input())
+NAME = str(input())
 
-print("*" * (len(name) + 2))
-print("*" + name + "*")
-print("*" * (len(name) + 2))
+print("*" * (len(NAME) + 2))
+print("*" + NAME + "*")
+print("*" * (len(NAME) + 2))
