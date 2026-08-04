@@ -1,9 +1,11 @@
 """โปรแกรมการหาจำนวนครั้งในการกดเครื่องคิดเลข"""
 
-x = int(input())
-y = (x * 2)
+n = int(input())
 
-if x == 1:
+if n == 1:
     print(1)
 else:
-    print(y)
+    count = 0
+    for i in range(1,n+1):
+        count += len(str(i))
+    print(count)
