@@ -4,3 +4,6 @@ for counter in range(1,5): # start, stop, step
 
 for counter in range(10,0,-1): # 10 - 1
     print(counter)
+
+for i in range(5):
+    print(i)
