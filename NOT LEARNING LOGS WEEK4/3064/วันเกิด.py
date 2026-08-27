@@ -1,5 +1,7 @@
 """โปรแกรมคำนวนว่าใครเกิดก่อน"""
 
+from datetime import date
+
 y1 = int(input())
 m1 = int(input())
 d1 = int(input())
@@ -8,14 +10,14 @@ y2 = int(input())
 m2 = int(input())
 d2 = int(input())
 
-day1 = y1 * 365 + m1 * 30 + d1
-day2 = y2 * 365 + m2 * 30 + d2
+date1 = date(y1, m1, d1)
+date2 = date(y2, m2, d2)
 
-diff = day1 - day2
+diff = abs((date1 - date2).days)
 
-if -7 <= diff <= 7:
+if diff <= 7:
     print(0)
-elif diff < 0:
+elif date1 < date2:
     print(1)
 else:
     print(2)
