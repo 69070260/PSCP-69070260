@@ -8,6 +8,7 @@ if not b or b > d:
     print(a * d)
 elif b == 1:
     print(((d - 1) * c) + (1 * a))
+
 else:
     first = (d - 1) // b
     left = (d - 1) % b

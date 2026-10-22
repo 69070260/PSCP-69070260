@@ -1,5 +1,5 @@
 """ฟิลเตอร์ AR TikTok"""
-r, x, y = map(float, input().split())
+r, x, y = map(int, input().split())
 
 circle = x**2 + y**2
 r_2 = r**2
